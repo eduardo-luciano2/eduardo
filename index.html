@@ -1,51 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <title>Página de login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
     <style>
-body{
-    background-color: rgb(62, 146, 241);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    margin: 0%;
-}
-    .container{
-        background: rgba(192, 188, 188, 0.986);
-        padding: 25px;
-        border-radius: 20px;
-        box-shadow: 0 0 20px #272bfc ;
-        text-align: center;
-    }
-    input{
-        padding: 10px;
-        margin: 10px;
-        border: 10px inset #000000;
-        border-radius: 15px;
-        box-shadow: 0 0 20px #2e19e7 ;
-    }
-    button{
-        width: 50%;
-        height: 25px;
-        background:  #0a0909;
-        color: #ffffff;
-        border-radius: 30px;
-        font-size: 15px;
-        cursor: pointer;
-    }
-    button:hover{
-        background:  #ffffff;
-        color: #140505;
-    }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu li{
+            list-style: none;/*limpar marcadores padrao da lista UL ou OL*/
+            display: flex;/*permite que os elementos sejam organizados de maneira flexivel*/
+            justify-content: space-around;/*distribui os itens uniformimente deixando um espaço entre eles */
+            align-items: center;/*centraliza verticalmente os elementos*/
+            background-color: blue;/*cor de fundo*/
+            padding: 10px 0;/* adiciona 10 pixels de espaçamento em cime e em baixo sem mudar as laterais */
+            position: fixed;/* fixa os elementos na tela para não rolar com a página */
+            top: 0;/* posiciona o elemento na parte superior da tela */
+            width: 100%;/*faz com que o elemento ocupe 100% da largura da tela*/
+            z-index: 1000;/*garante que os elementos fique acima de outros itens da tela*/
+            
+            
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Login</h1>
-       <br><input type="text"placeholder="Email">
-       <br> <input type="password"placeholder="senha">
-        <br> <button>Entrar</button>
-    </div>
+   <ul class="menu"> 
+    <li>inicio</li>
+    <li>sobre</li>
+    <li>perfil</li>
+    <li>contatos</li>
+   </ul> 
 </body>
+</html>

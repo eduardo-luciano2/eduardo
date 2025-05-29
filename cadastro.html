@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastrar-se</title>
+    <title>Página de login</title>
+    <style>
+body{
+    background-color: rgb(62, 146, 241);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0%;
+}
+    .container{
+        background: rgba(192, 188, 188, 0.986);
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #272bfc ;
+        text-align: center;
+    }
+    input{
+        padding: 10px;
+        margin: 10px;
+        border: 10px inset #000000;
+        border-radius: 15px;
+        box-shadow: 0 0 20px #2e19e7 ;
+    }
+    button{
+        width: 50%;
+        height: 25px;
+        background:  #0a0909;
+        color: #ffffff;
+        border-radius: 30px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    button:hover{
+        background:  #ffffff;
+        color: #140505;
+    }
+    </style>
 </head>
 <body>
-    <a href="login.html"><button>cadastrar-se</button></a>
+    <div class="container">
+        <h1>Login</h1>
+       <br><input type="text"placeholder="Email">
+       <br> <input type="password"placeholder="senha">
+        <br> <button>Entrar</button>
+    </div>
 </body>
-</html>
